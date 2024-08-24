@@ -192,3 +192,18 @@ Age: 30
  
 */
 #endregion
+
+
+#region Interface Example and Implementation
+//Description of interface is given in the file "InterfacesExample"
+// Created an implementation class inside the file above so output can be shown
+//DemonstrateProductInterface.Demo();
+
+/*
+OUTPUT:
+Products in Repository:
+ID: 1, Name: Laptop, Price: ? 999.99
+ID: 2, Name: Car, Price: ? 3,999.99
+
+*/
+#endregion
