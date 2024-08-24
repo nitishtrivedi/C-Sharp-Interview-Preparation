@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterviewPrep
+namespace InterviewPrep.ConceptsAndExamples
 {
     //Enums or Enumerations Example
     /*
@@ -28,7 +28,7 @@ namespace InterviewPrep
         public void ShowDefaultEnumValues()
         {
             Console.WriteLine("Default Enum Values:");
-            foreach(OrderStatus status in  Enum.GetValues(typeof(OrderStatus)))
+            foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
             {
                 Console.WriteLine($"Status: {status}, Value: {(int)status}");
             }
@@ -37,10 +37,10 @@ namespace InterviewPrep
         public void ShowChangedEnumValues()
         {
             Console.WriteLine("Changed Enum Values:");
-            foreach(OrderStatus status in Enum.GetValues(typeof(OrderStatus))) //First loop through all initial values
+            foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus))) //First loop through all initial values
             {
                 //For each current value, explicit casting is done and 2 is added to its value
-                int newValue = ((int)status + 2);
+                int newValue = (int)status + 2;
 
                 //Reassign values to the original Enum
                 OrderStatus newStatus = (OrderStatus)newValue;

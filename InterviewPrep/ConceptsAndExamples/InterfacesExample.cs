@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterviewPrep
+namespace InterviewPrep.ConceptsAndExamples
 {
     //Below is example of how to use interfaces, and demonstration of IEnumerable<T> 
 
@@ -36,14 +36,14 @@ namespace InterviewPrep
     }
 
     //PRODUCT REPOSITORY - Implementation is taken care HERE. This uses the interface created above to perform actions
-    public class ProductRepository: IProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly List<Product> _products = new List<Product>();
 
         //Implement methods inside the interface
-        public void AddProduct( Product product )
+        public void AddProduct(Product product)
         {
-            _products.Add( product );
+            _products.Add(product);
         }
 
         public IEnumerable<Product> GetAllProducts()

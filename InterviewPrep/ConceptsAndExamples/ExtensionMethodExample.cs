@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterviewPrep
+namespace InterviewPrep.ConceptsAndExamples
 {
     //Example of Extension methods. The class itself and all the methods inside must be static
     internal static class ExtensionMethodExample

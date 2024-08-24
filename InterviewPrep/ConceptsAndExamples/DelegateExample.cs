@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterviewPrep
+namespace InterviewPrep.ConceptsAndExamples
 {
     //Delegates Example
-    
+
     public class DelegateExample
     {
         //Declare a delegate
@@ -28,6 +28,6 @@ namespace InterviewPrep
         {
             return x * y;
         }
-    
+
     }
 }
