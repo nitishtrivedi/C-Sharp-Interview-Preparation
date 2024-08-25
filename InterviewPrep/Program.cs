@@ -8,3 +8,4 @@ using InterviewPrep;
 RunEveryExample runEveryExample = new RunEveryExample();
 
 //Use the above object and run ANY or EVERY example
+runEveryExample.MethodOverloadingExample();

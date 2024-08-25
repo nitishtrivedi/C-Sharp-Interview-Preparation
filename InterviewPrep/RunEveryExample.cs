@@ -207,5 +207,62 @@ namespace InterviewPrep
             */
         }
 
+        public void PolymorphismExample()
+        {
+            //Implement polymorphism here. Refer to PolymorphismExample.cs for classes derived
+            //Polymorphism means multiple forms. One method can have different implementations, and one action can have different behaviours based on object type.
+            //Base class is Animal and dervied classes are Dog and Cat. We call instance of each class first
+            Animal animal = new Animal();
+            Dog dog = new Dog();
+            Cat cat = new Cat();
+
+            //Using the same method, i.e. the method shown below, we can pass the objects created above and get variation of responses
+            PolymorphismExampleClass.MakeAnimalSound(animal);
+            PolymorphismExampleClass.MakeAnimalSound(dog);
+            PolymorphismExampleClass.MakeAnimalSound(cat);
+
+            /*
+             
+            OUTPUT:
+            Generic Animal Sound
+            BARK
+            MEOW
+             
+             */
+
+            /*
+             
+            SUMMARY: AS IN THE METHOD PolymorphismExampleClass.MakeAnimalSound(); METHOD, THE ARGUMENT IS A GENERIC ANIMAL, AS PER THE BASE CLASS. BUT THE SAME METHOD, DEFINES WHICH IMPLEMENTATION TO CALL BASED ON THE OBJECT TYPE THAT IS PASSED. 
+            BASED ON THE OBJECT, THE VIRTUAL METHOD IS OVERRIDDEN BY THE METHOD PRESENT INSIDE THE CLASS OF THE OBJECT THAT IS PASSED.
+             
+             */
+
+        }
+
+        public void StructVsClassExample()
+        {
+            //Copy Ref vs whole object method
+            //StructVsClass.CopyReferenceVsObject();
+
+            //Assignment by ref vs value method
+            StructVsClass.ReferenceVsValueForClass();
+            StructVsClass.ReferenceVsValueForStruct();
+        }
+
+        public void DelegateExample2()
+        {
+            DelegateExample2Class.MainForDelegates();
+        }
+
+        public void MethodOverridingExample()
+        {
+            MethodOverloadingVsOverriding.MethodOverriding();
+        }
+
+        public void MethodOverloadingExample()
+        {
+            MethodOverloadingVsOverriding.MethodOverLoading();
+        }
+
     }
 }
